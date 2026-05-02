@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1f2937" />
+  <title>Espalda 52</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Espalda 52</h1>
+      <p>Rutina postural, fuerza y control lumbo-pélvico</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="screen active">
+      <h2>Elige rutina</h2>
+      <div class="grid" id="routineCards"></div>
+      <button class="secondary" id="showHistoryBtn">Ver historial</button>
+    </section>
+
+    <section id="routine" class="screen">
+      <button class="link" id="backHomeBtn">← Inicio</button>
+      <div class="routine-top">
+        <h2 id="routineTitle"></h2>
+        <p id="routineGoal"></p>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <article class="exercise-card">
+        <p id="stepCounter" class="muted"></p>
+        <h3 id="exerciseName"></h3>
+        <p><strong>Bloque:</strong> <span id="exerciseBlock"></span></p>
+        <p><strong>Series:</strong> <span id="exerciseSets"></span> · <strong>Reps:</strong> <span id="exerciseReps"></span> · <strong>Descanso:</strong> <span id="exerciseRest"></span></p>
+        <p><strong>Objetivo:</strong> <span id="exerciseObjective"></span></p>
+        <p><strong>Técnica clave:</strong> <span id="exerciseTechnique"></span></p>
+        <p><strong>Evitar:</strong> <span id="exerciseAvoid"></span></p>
+        <a id="exerciseVideo" class="video" target="_blank" rel="noopener">Ver vídeo técnico</a>
+      </article>
+      <div class="actions">
+        <button id="prevBtn" class="secondary">Anterior</button>
+        <button id="doneBtn">Hecho y siguiente</button>
+      </div>
+    </section>
+
+    <section id="finish" class="screen">
+      <button class="link" id="backRoutineBtn">← Volver</button>
+      <h2>Registro final</h2>
+      <form id="sessionForm" class="form">
+        <label>Dolor lumbar 0-10<input type="number" min="0" max="10" id="lumbarPain" required /></label>
+        <label>Dolor cervical 0-10<input type="number" min="0" max="10" id="neckPain" required /></label>
+        <label>Esfuerzo percibido 0-10<input type="number" min="0" max="10" id="rpe" required /></label>
+        <label>Fatiga 0-10<input type="number" min="0" max="10" id="fatigue" required /></label>
+        <label>Notas<textarea id="notes" rows="4" placeholder="Ej.: molestia lumbar en prensa, face pull bien tolerado..."></textarea></label>
+        <button type="submit">Guardar sesión</button>
+      </form>
+    </section>
+
+    <section id="history" class="screen">
+      <button class="link" id="backHomeFromHistoryBtn">← Inicio</button>
+      <h2>Historial</h2>
+      <div id="historyList"></div>
+      <button class="danger" id="clearHistoryBtn">Borrar historial</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Uso orientativo. Si aparece dolor intenso, irradiado, pérdida de fuerza o síntomas neurológicos, detén el ejercicio y consulta a un profesional sanitario.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
