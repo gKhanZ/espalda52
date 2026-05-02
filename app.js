@@ -619,6 +619,8 @@ $('backHomeBtn').onclick = ()=>show('home');
 $('backHomeFromHistoryBtn').onclick = ()=>show('home');
 $('backRoutineBtn').onclick = ()=>show('routine');
 $('showHistoryBtn').onclick = ()=>{ renderHistory(); show('history'); };
+$('showMaterialsBtn').onclick = ()=>show('materials');
+$('backHomeFromMaterialsBtn').onclick = ()=>show('home');
 $('prevBtn').onclick = prev;
 $('doneBtn').onclick = next;
 $('sessionForm').onsubmit = saveSession;

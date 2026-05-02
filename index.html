@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1f2937" />
-  <title>Espalda 52</title>
+  <title>Espalda 52 v1.3</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,6 +21,7 @@
       <h2>Elige rutina</h2>
       <div class="grid" id="routineCards"></div>
       <button class="secondary" id="showHistoryBtn">Ver historial</button>
+      <button class="secondary" id="showMaterialsBtn">Material complementario</button>
     </section>
 
     <section id="routine" class="screen">
@@ -64,6 +65,23 @@
       <h2>Historial</h2>
       <div id="historyList"></div>
       <button class="danger" id="clearHistoryBtn">Borrar historial</button>
+    </section>
+
+    <section id="materials" class="screen">
+      <button class="link" id="backHomeFromMaterialsBtn">← Inicio</button>
+      <h2>Material complementario</h2>
+      <article class="exercise-card">
+        <span class="pill">PDF original</span>
+        <h3>Programme Haltères et Go — N°1</h3>
+        <p>Documento original usado como base para articular las rutinas A, B y C con Journée 1, 2 y 3.</p>
+        <p><strong>Uso recomendado:</strong> consúltalo como material de apoyo. Para entrenar día a día, sigue las rutinas adaptadas de esta app, que añaden control postural para cifosis torácica e hiperlordosis lumbar.</p>
+        <a class="video" href="programme-halteres-et-go.pdf" target="_blank" rel="noopener">Abrir PDF original</a>
+      </article>
+      <article class="exercise-card note-card">
+        <h3>Notas de adaptación postural</h3>
+        <p>La app conserva los ejercicios principales del PDF, pero añade movilidad torácica, trabajo escapular, core anti-extensión y control lumbo-pélvico.</p>
+        <p>En ejercicios de empuje —press, dips, press militar— mantén abdomen activo, cuello neutro y evita exagerar el arco lumbar. Si aparece dolor anterior de hombro, reduce carga o sustituye el ejercicio.</p>
+      </article>
     </section>
   </main>
 
