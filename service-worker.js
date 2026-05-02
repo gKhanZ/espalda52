@@ -1,4 +1,4 @@
-const CACHE_NAME = 'espalda52-v1-1';
+const CACHE_NAME = 'espalda52-v1-2';
 const ASSETS = ['./','./index.html','./style.css','./app.js','./manifest.json','./icon-192.png','./icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));

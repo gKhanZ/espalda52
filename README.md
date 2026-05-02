@@ -1,10 +1,7 @@
-# Espalda 52 PWA v1.1
+# Espalda 52 PWA v1.2
 
-Aplicación personal para rutinas de gimnasio y casa orientadas a cifosis torácica, control escapular, hiperlordosis lumbar, glúteo y core.
+Versión articulada con el Programme N°1: Rutina A = Journée 1, Rutina B = Journée 2, Rutina C = Journée 3.
 
-## Cambios v1.1
-- Rutinas A, B y C más balanceadas.
-- Rutina B añade movilidad torácica y activación escapular.
-- Rutina C añade movilidad inicial, band pull-aparts y reverse fly.
-- Nueva pestaña/rutina extra para casa: cifosis + hiperlordosis.
-- Mejor estructura visual con secciones Gimnasio y Extra casa.
+Incluye los ejercicios originales, detalles técnicos traducidos/adaptados y añadidos correctivos para cifosis torácica e hiperlordosis lumbar.
+
+Uso orientativo: ante dolor intenso, irradiado, pérdida de fuerza o síntomas neurológicos, detener el ejercicio y consultar a un profesional sanitario.
